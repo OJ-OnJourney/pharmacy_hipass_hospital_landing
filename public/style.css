@@ -1,0 +1,346 @@
+/*공통*/
+
+body {
+    width: 100vw;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    letter-spacing: -0.1rem;
+    color: #6E8097;
+    word-break: keep-all;
+}
+section {
+    text-align: center;
+}
+.container {
+    max-width: 1120px;
+    width:90vw;
+    margin: 0 auto;
+}
+img { 
+    max-width: 100%;
+    height: auto;
+}
+article {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.primary {
+    color: #06CE95;
+}
+
+
+
+/*Header&Footer*/
+
+header { 
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 84px;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+}
+nav {
+    max-width: 1120px;
+    width: 90vw;
+    height: 84px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    height: 32px;
+}
+header button.CTA {
+    font-size: 15px;
+    font-weight: 500;
+    width: 100px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    color: #363E52;
+}
+p{
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -3%;
+}
+button.CTA:hover {
+    transition: transform 0.4s;
+    background: #00BC83;
+}
+button.CTA:hover:after {
+    display: none;
+}
+
+
+/*Button*/
+button.CTA {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    color:#FFF;
+    background: #06CE95;
+    width: 240px;
+    height: 52px;
+    border-radius: 12px;
+}
+#P01 button.CTA:after {
+    position: absolute;
+    content: '';  
+    top:0;
+    left:20px;
+    width: 200px;
+    height: 52px;
+    box-shadow: 0 20px 40px 0 rgba(6, 206, 149, 0.3);
+}
+
+
+
+
+
+/*Pages*/
+#P01 {
+    height: 800px;
+    padding-top: 120px;
+    background-image: url(images/phones.png);
+    background-position: center 500px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+#P01 img {
+    width: 80%;
+    max-width: 720px;
+}
+#P02 {
+    padding: 120px 0;
+}
+#P02 .compare {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top:40px;
+}
+#P02 .compare h4 {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #FFF;
+    padding: 4px 20px 4px 20px;
+    border-radius: 40px;
+    background: #C0C4CC;
+    text-align: center;
+}
+#P02 .compare .primary h4{
+    background: #06CE95;
+}
+#P02 .compare .primary p{
+    color: #192A3E;
+}
+#P02 .arrow {
+    text-indent: -100000px;
+    background-image: url(images/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 100px;
+}
+#P02 p {
+    font-weight: 700;
+    color: #989FB0;
+}
+#P02 li span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #6E8097;
+}
+#P02 ul {
+    padding-top: 40px;
+}
+#P02 li {
+    padding-bottom: 20px;
+}
+#P03 {
+    background: #F9FAFB;
+    padding:120px 0;
+}
+#P03 .imgbox {
+    max-width: 50%;
+    height: auto; 
+    text-align: center;
+}
+#P03 .imgbox img {
+    width: 100%;
+}
+#P03 .txtbox {
+    padding-left: 10%;
+    text-align: left;
+}
+#P03 article:last-child {
+    flex-direction: row-reverse;
+}
+#P03 article:last-child .txtbox {
+    padding-left: 0px;
+    padding-right: 10%;
+}
+#P04 {
+    padding: 12vh 0;
+    background: url(images/P04_bg.png) no-repeat center fixed;
+    background-size: cover;
+}
+#P04 h2 {
+    color:#FFF;
+}
+
+footer {
+    width:100vw;
+    background: #192A3E;
+}
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 80px 0;
+}
+footer a{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+footer li, footer p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top:20px;
+    letter-spacing: 0;
+}
+
+
+
+
+
+/* 해상도 ~ 800px*/ 
+@media all and (max-width:800px) {
+   
+    #P03 article{
+        text-align: center;
+        display: block;
+    }
+    #P03 article:last-child {
+        flex-direction: row;
+    } 
+    #P03 .imgbox {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    #P03 .txtbox {
+        padding:0;
+        text-align: center;
+    }
+    #P03 article:last-child .txtbox {
+        padding-left: 0px;
+        padding-right: 0;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+        padding-bottom: 20px;
+    }
+    article {
+        text-align: left;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 80px;
+    }
+    footer .container {
+        display: block;
+        padding: 40px 0;
+    }
+    footer div:last-child {
+        padding-top:40px;
+    }
+}
+    
+/* 해상도 ~ 600px*/ 
+@media all and (max-width:600px) {
+    #P01 {
+        height: 600px;
+        padding-top: 120px;
+        background-image: url(images/phones.png);
+        background-position: center 360px;
+        background-size: 140%;
+        background-repeat: no-repeat;
+    }
+    #P02 {
+        padding: 80px 0;
+    }
+    #P02 .compare {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #P02 .compare h4 {
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 700;
+        color: #FFF;
+        width: auto;
+        padding: 4px 20px 4px 20px;
+        border-radius: 40px;
+        background: #C0C4CC;
+    }
+    #P02 .arrow {
+        text-indent: -100000px;
+        background-image: url(images/arrow.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 100px;
+        margin-bottom: 20px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+    }
+    button.CTA {
+        font-size: 16px;
+        width: 180px;
+        height: 44px;
+        border-radius: 12px;
+    }
+    #P01 button.CTA:after {
+        position: absolute;
+        content: '';  
+        top:0;
+        left:20px;
+        width: 140px;
+        height: 44px;
+        box-shadow: 0 20px 40px 0 rgba(6, 206, 149, 0.3);
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -3%;
+    }
+    #P02 span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #6E8097;
+    }
+}

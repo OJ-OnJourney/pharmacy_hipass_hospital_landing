@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "hospital-pharmacyhipassrel",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
