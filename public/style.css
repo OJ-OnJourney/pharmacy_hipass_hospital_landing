@@ -73,6 +73,10 @@ p{
     line-height: 36px;
     letter-spacing: -3%;
 }
+.caption {
+    font-size: 16px;
+    letter-spacing: 0;
+}
 button.CTA:hover {
     transition: transform 0.4s;
     background: #00BC83;
@@ -92,6 +96,7 @@ button.CTA {
     width: 240px;
     height: 52px;
     border-radius: 12px;
+    margin-bottom: 12px;
 }
 #P01 button.CTA:after {
     position: absolute;
@@ -112,7 +117,7 @@ button.CTA {
     height: 800px;
     padding-top: 120px;
     background-image: url(images/phones.png);
-    background-position: center 500px;
+    background-position: center 550px;
     background-size: 80%;
     background-repeat: no-repeat;
 }
@@ -198,6 +203,7 @@ button.CTA {
     padding: 12vh 0;
     background: url(images/P04_bg.png) no-repeat center fixed;
     background-size: cover;
+    color:#FFF;
 }
 #P04 h2 {
     color:#FFF;
@@ -278,7 +284,7 @@ footer li, footer p {
         height: 600px;
         padding-top: 120px;
         background-image: url(images/phones.png);
-        background-position: center 360px;
+        background-position: center 400px;
         background-size: 140%;
         background-repeat: no-repeat;
     }
@@ -338,9 +344,5 @@ footer li, footer p {
         letter-spacing: -3%;
     }
     #P02 span {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        color: #6E8097;
     }
 }

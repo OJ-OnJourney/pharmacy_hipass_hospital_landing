@@ -9,20 +9,46 @@
         <link rel="stylesheet" href="style.css">
         <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
         <title>약국하이패스-병원전용</title>
+
+        <script>
+            function onClick () {
+            var userAgent = window.navigator.userAgent,
+                platform = window.navigator.platform,
+                macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+                windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+                iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+                os = null;
+        
+            if (macosPlatforms.indexOf(platform) !== -1) {
+                os = 'macos';
+                window.location.replace("https://play.google.com/store/apps/details?id=com.pharmacyhipass.hospital","_blank");
+            } else if (iosPlatforms.indexOf(platform) !== -1) {
+                os = 'ios';
+                alert("ios는 준비중입니다.")
+            } else if (windowsPlatforms.indexOf(platform) !== -1) {
+                os = 'windows';
+                window.location.replace("https://play.google.com/store/apps/details?id=com.pharmacyhipass.hospital","_blank");
+            } else if (/Android/.test(userAgent)) {
+                os = 'android';
+                window.location.replace("https://play.google.com/store/apps/details?id=com.pharmacyhipass.hospital");
+            }
+        }
+        </script>
     </head>
     
     <body>
         <header>
             <nav>
                 <a href="#P01"><img class="logo" src="images/Logo.png" alt="약국하이패스 로고"></a>
-                <button class="CTA">앱 다운로드</button>
+                <button class="CTA" onClick="onClick()">앱 다운로드</button>
             </nav>
         </header>
         <div id="Wrap">
 
             <section id="P01">
                 <h1><img src="images/Title.png" alt="재택치료 처방전 전송 프로그램 약국 하이패스-병원전용"></h1>
-                <button class="CTA">앱 다운로드</button>
+                <button class="CTA" onClick="onClick()">앱 다운로드</button>
+                <p class="caption">*ios는 준비중입니다.</p>
             </section>
             
             <section id="P02">
@@ -95,7 +121,8 @@
             
             <section id="P04">
                 <h2>약국 하이패스, 지금 경험해보세요</h2>
-                <button class="CTA">앱 다운로드</button>
+                <button class="CTA" onClick="onClick()">앱 다운로드</button>
+                <p class="caption">*ios는 준비중입니다.</p>
             </section>
             
             <footer>
