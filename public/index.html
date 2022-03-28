@@ -22,14 +22,17 @@
             if (macosPlatforms.indexOf(platform) !== -1) {
                 os = 'macos';
                 window.location.replace("https://play.google.com/store/apps/details?id=com.pharmacyhipass.hospital","_blank");
+                // window.location.replace("https://firebasestorage.googleapis.com/v0/b/pharmacyhipass.appspot.com/o/Binaries%2Fpharmacyhipass-rel-1.0.3(43)-arm64-v8a-release.apk?alt=media&token=a6bdaef2-4d87-4c49-865b-0625f8b83a85");
             } else if (iosPlatforms.indexOf(platform) !== -1) {
                 os = 'ios';
                 alert("ios는 준비중입니다.")
             } else if (windowsPlatforms.indexOf(platform) !== -1) {
                 os = 'windows';
+                // window.location.replace("https://firebasestorage.googleapis.com/v0/b/pharmacyhipass.appspot.com/o/Binaries%2Fpharmacyhipass-rel-1.0.3(43)-arm64-v8a-release.apk?alt=media&token=a6bdaef2-4d87-4c49-865b-0625f8b83a85");
                 window.location.replace("https://play.google.com/store/apps/details?id=com.pharmacyhipass.hospital","_blank");
             } else if (/Android/.test(userAgent)) {
                 os = 'android';
+                // window.location.replace("https://firebasestorage.googleapis.com/v0/b/pharmacyhipass.appspot.com/o/Binaries%2Fpharmacyhipass-rel-1.0.3(43)-arm64-v8a-release.apk?alt=media&token=a6bdaef2-4d87-4c49-865b-0625f8b83a85");
                 window.location.replace("https://play.google.com/store/apps/details?id=com.pharmacyhipass.hospital");
             }
         }
